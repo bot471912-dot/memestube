@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#6f6cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="48" rx="8" fill="url(#g)" opacity="0.12" />
+  <g transform="translate(12,6)">
+    <circle cx="16" cy="16" r="16" fill="#0b0f14" opacity="0.6" />
+    <path d="M10 9 L22 16 L10 23 Z" fill="#00d4ff" />
+  </g>
+  <text x="52" y="30" font-family="Inter, system-ui, Arial" font-weight="700" font-size="18" fill="#e6eef6">Meme Tube</text>
+</svg>

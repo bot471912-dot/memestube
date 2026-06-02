@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meme Tube</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+            <img src="logo.png" alt="Meme Tube" class="logo">
+      </div>
+      <nav class="nav">
+        <button id="btn-home" class="nav-btn active">Accueil</button>
+        <button id="btn-shorts" class="nav-btn">Shorts</button>
+      </nav>
+      <div class="theme-switcher">
+        <button class="theme-btn" data-theme="default">Default</button>
+        <button class="theme-btn" data-theme="midnight">Midnight</button>
+        <button class="theme-btn" data-theme="sunset">Sunset</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="view">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <img src="logo.png" alt="Meme Tube" class="hero-logo">
+            <h2 class="hero-title">Meme Tube — Les meilleurs memes en vidéo</h2>
+            <p class="hero-sub">Découvre, partage et ris — shorts rapides et sélection de vidéos drôles.</p>
+            <div class="hero-ctas">
+              <button id="cta-shorts" class="btn primary">Voir les Shorts</button>
+              <button id="cta-browse" class="btn">Parcourir</button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-preview">
+              <img src="logo.png" alt="preview" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept">
+        <h3 class="section-title">Concept</h3>
+        <div class="cards">
+          <div class="card">
+            <h4>Shorts</h4>
+            <p>Parcours des vidéos courtes en plein écran, autoplay et sans distraction.</p>
+          </div>
+          <div class="card">
+            <h4>Sélection</h4>
+            <p>Ajoute tes liens dans `lien.txt` pour alimenter la sélection de vidéos.</p>
+          </div>
+          <div class="card">
+            <h4>Partage</h4>
+            <p>Ouvre chaque vidéo dans son site source avec le bouton « Ouvrir » si tu veux partager.</p>
+          </div>
+        </div>
+      </section>
+
+      <div id="list" class="list thumbs"></div>
+    </section>
+
+    <section id="shorts" class="view hidden">
+      <div class="shorts-list" id="shorts-list"></div>
+    </section>
+  </main>
+
+  <div class="short-nav" aria-hidden="false">
+    <button id="short-up" class="short-nav-btn" aria-label="Précédent">▲</button>
+    <button id="short-down" class="short-nav-btn" aria-label="Suivant">▼</button>
+    <button id="sound-toggle" class="short-nav-btn" aria-label="Son">🔈</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
